@@ -17,6 +17,7 @@ function ProductList(){
     }
   }, [fetchedproducts, dispatch]);
 
+  // search button trigger after typing
   const handleSearch = (e) => {
     dispatch(setSearchTerm(e.target.value));
   };
