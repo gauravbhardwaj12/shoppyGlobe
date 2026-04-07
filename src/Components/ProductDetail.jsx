@@ -26,7 +26,7 @@ function ProductDetail(){
                <h2 className="producttitle">{p.title}</h2>
                <p className="productdescription">{p.description}</p>
                <p>{p.price}<span>$</span></p>
-               <button onClick={()=>handleaddTocart(p)}>Add to cart</button>
+               <button className="addtocart" onClick={()=>handleaddTocart(p)}>Add to cart</button>
                 </div>
                 
             </div>

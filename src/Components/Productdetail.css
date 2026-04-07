@@ -19,3 +19,10 @@
 .productinfo{
     width: 40%;
 }
+.addtocart{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #28A745;
+    border:1px solid white
+}
