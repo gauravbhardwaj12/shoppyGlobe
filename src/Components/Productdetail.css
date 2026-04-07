@@ -1,0 +1,14 @@
+.productdetail{
+    display: flex;
+    justify-content: left;
+    align-items: start ;
+    text-align: left;
+}
+.productdetail img{
+   width: 400px;
+   height: 400px;
+   text-align: center;
+}
+.productinfo{
+    width: 40%;
+}
