@@ -1,10 +1,12 @@
-import Home from './Components/Home';
-import Cart from './Components/Cart';
-import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
-import Layout from './Components/Layout';
-import ProductDetail from './Components/ProductDetail';
-import Checkout from './Components/Checkout';
-import NotFound from './Components/NotFound';
+import { lazy, Suspense } from "react";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
+const Home = lazy(() => import("./Components/Home"));
+const Cart = lazy(() => import("./Components/Cart"));
+const Layout = lazy(() => import("./Components/Layout"));
+const ProductDetail = lazy(() => import("./Components/ProductDetail"));
+const Checkout = lazy(() => import("./Components/Checkout"));
+const NotFound = lazy(() => import("./Components/NotFound"));
 import './App.css'
 
 
@@ -37,7 +39,10 @@ function App() {
   ]);
 
   return (
+    <Suspense fallback={<h2>Loading...</h2>}>
        <RouterProvider router={approuter}/>
+    </Suspense>
+      
   )
 }
 
