@@ -3,7 +3,7 @@ import Data from "../utils/Data.js";
 import { useSelector,useDispatch } from "react-redux";
 import { setProducts,setSearchTerm } from "../utils/Cart/Productslice.js";
 import { useEffect } from "react";
-import './productlist.css'
+import './Productlist.css'
 function ProductList(){
     const dispatch=useDispatch();
     const fetchedproducts=Data();
@@ -22,9 +22,10 @@ function ProductList(){
   };
     
     return(<>
-    <h2>Products</h2>
-      <input className="searchbox" type="text" placeholder="Search products..." value={searchTerm}  onChange={handleSearch}
-      />
+    <div><label htmlFor="">Search</label>
+     <input className="searchbox" type="text" placeholder="Search products..." value={searchTerm}  onChange={handleSearch} />
+    </div>
+     
     <div id="productlist">
         {products.map((p)=>{
          return(

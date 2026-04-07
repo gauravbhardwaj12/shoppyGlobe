@@ -6,3 +6,8 @@ box-sizing: border-box;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
 }
+.searchbox{
+  height: 30px;
+  margin: 20px;
+  width: 50%;
+}
