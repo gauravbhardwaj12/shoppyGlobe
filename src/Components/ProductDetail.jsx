@@ -20,7 +20,7 @@ function ProductDetail(){
             return(
             <div key={p.id} className="productdetail">
                 <div className="productimages">
-                  <img src={p.images} alt="" />
+                  <img src={p.images} alt="" loading="lazy" />
                 </div>
                 <div className="productinfo">
                <h2 className="producttitle">{p.title}</h2>
