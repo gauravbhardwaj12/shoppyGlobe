@@ -1,12 +1,11 @@
-import Header from './Components/Header'
-import ProductList from './Components/ProductList';
 import Home from './Components/Home';
 import Cart from './Components/Cart';
-import './App.css'
 import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
 import Layout from './Components/Layout';
 import ProductDetail from './Components/ProductDetail';
 import Checkout from './Components/Checkout';
+import NotFound from './Components/NotFound';
+import './App.css'
 
 
 function App() {
@@ -14,6 +13,7 @@ function App() {
   const approuter=createBrowserRouter([
     {
       element:<Layout/>,
+      errorElement:<NotFound/>,
       children:[
  {
       path:"/",
