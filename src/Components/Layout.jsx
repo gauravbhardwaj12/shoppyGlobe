@@ -7,10 +7,10 @@ function Layout(){
 
     <div className="app">
          <Header/>
-         <main className="content">
+       
         <Outlet />
-         </main>
-        <footer/>
+         
+
     </div>
     
     </>)
