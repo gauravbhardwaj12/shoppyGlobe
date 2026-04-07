@@ -34,3 +34,8 @@
     background-color: blue;
     border:1px solid white
 }
+@media (max-width: 814px) {
+    .addtocart,.checkout{
+        margin-bottom: 20px;
+    }
+}
