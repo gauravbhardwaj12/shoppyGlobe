@@ -23,8 +23,8 @@ function ProductDetail(){
                   <img src={p.images} alt="" />
                 </div>
                 <div className="productinfo">
-               <h4>{p.title}</h4>
-               <p>{p.description}</p>
+               <h2 className="producttitle">{p.title}</h2>
+               <p className="productdescription">{p.description}</p>
                <p>{p.price}<span>$</span></p>
                <button onClick={()=>handleaddTocart(p)}>Add to cart</button>
                 </div>

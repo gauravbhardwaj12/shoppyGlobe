@@ -4,6 +4,13 @@
     align-items: start ;
     text-align: left;
 }
+.producttitle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productdescription{
+    margin-bottom: 20px;
+}
 .productdetail img{
    width: 400px;
    height: 400px;
