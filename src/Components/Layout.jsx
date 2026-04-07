@@ -8,7 +8,7 @@ function Layout(){
          <Header/>
        
         <Outlet />
-         
+         <footer><p>© 2026 MyShop. All rights reserved.</p></footer>
 
     </div>
     
