@@ -1,11 +1,18 @@
 import Header from "./Header"
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom"
+import './Layout.css'
 function Layout(){
     return(<>
-    <Header/>
-    <Outlet/>
-    <footer/>
+
+    <div className="app">
+         <Header/>
+         <main className="content">
+        <Outlet />
+         </main>
+        <footer/>
+    </div>
+    
     </>)
 }
 
