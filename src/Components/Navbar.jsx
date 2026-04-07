@@ -13,9 +13,18 @@ function Navbar(){
                 
             </li>
              <li>
+                <Link to="/checkout">Checkout</Link>
+                
+            </li>
+            <li>
+                <Link to="/cart">Cart</Link>
+                
+            </li>
+             <li>
                 <Link to="/cart"><FontAwesomeIcon icon={faCartArrowDown} />{totalQuantity}</Link>
             
             </li>
+           
         </ul>
     </>)
 }
