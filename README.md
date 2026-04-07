@@ -1,4 +1,9 @@
-# React + Vite
+# React project
+
+
+github link is : https://github.com/gauravbhardwaj12/shoppyGlobe
+
+
 name of the project  ShoppyGlobe
 
 steps to install
